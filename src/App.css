@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+     background-color:rgb(113, 105, 185);
+     margin: 0px;
+     user-select: none;
+}
+
+#container {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 100vh;
+}
+
+#title {
+     font-size: 30px;
+     font-family: 'Libre Baskerville', serif;
+     margin-bottom: 30px;
+}
+
+.config {
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 20px;
+}
+
+.length-control {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+}
+
+.timer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+#timer-label {
+     font-weight: bold;
+     font-size: 25px;
+}
+
+#time-left {
+     font-size: 100px;
+     font-family: 'Libre Baskerville', serif;
+     margin: 20px 0;
+     text-align: center;
+     user-select: none;
+}
+.controls {
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     justify-content: center;
+}
+
+.config-length {
+     font-size: 25px;
+     margin: 10px;
+}
+
+#start_stop {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.button {
+     padding: 10px;
+     background-color: white;
+     color: rgb(113, 105, 185);
+     cursor: pointer;
+     border-radius: 5px;
+     width: 105px;
+     text-align: center;
+}
+
+.bgcolor {
+     transition: color 1s ease;
+}
+
+#pomodoro {
+     padding: 20px;
+     background-color: rgba(255, 255, 255, 0.25);
+     border-radius: 10px;
+     margin-bottom: 30px;
+}
+
+.fa-arrow-alt-circle-up, .fa-arrow-alt-circle-down {
+     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+     #pomodoro {
+          width: 100%;
+          padding: 10px;
+     }
+     .config {
+          flex-direction: column;
+          margin-bottom: 0;
+     }
+     .length-control {
+          padding: 5px;
+     }
+     #start_stop {
+          flex-direction: column;
+     }
+     .button {
+          margin-bottom: 20px;
+     }
+     #pomodoro {
+          margin-bottom: 0px;
+          height: 90%;
+     }
+     #container {
+          margin: auto;
+     }
+     #title {
+          margin: 20px 0 0 0;
+          height: 10%;
+     }
+}
